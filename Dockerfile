@@ -1,4 +1,4 @@
-# Use an official Python runtime as the base image
+# Use an official Python runtime as the base image. Extra comment!
 FROM python:3.8-slim
 
 # Set the working directory in the container to /app
@@ -14,4 +14,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 EXPOSE 5000
 
 # Run the command to start the Flask app
-CMD ["flask", "run", "--host=0.0.0.0"]
+CMD ["flask", "run", "--host=0.0.0.0"]  
